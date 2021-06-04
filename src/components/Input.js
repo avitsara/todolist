@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DeleteIcon from '@material-ui/icons/Delete';
+import TextField from '@material-ui/core/TextField';
 
 
-class Input extends React.Component {
-    render() {
-      return <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+function Input() {
+      return (
+        <form noValidate autoComplete="off">
+        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+        </form>
+      )
+
 
   }
-}
+
 
 export default Input;
